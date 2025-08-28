@@ -1,0 +1,310 @@
+[
+  {
+    "team_id": "10",
+    "team_name": "Manchester City",
+    "team_url": "https://sofifa.com/team/10/manchester-city/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/9/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "9",
+    "team_name": "Liverpool",
+    "team_url": "https://sofifa.com/team/9/liverpool/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/8/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "1",
+    "team_name": "Arsenal",
+    "team_url": "https://sofifa.com/team/1/arsenal/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/19/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "18",
+    "team_name": "Tottenham Hotspur",
+    "team_url": "https://sofifa.com/team/18/tottenham-hotspur/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/6/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "13",
+    "team_name": "Newcastle United",
+    "team_url": "https://sofifa.com/team/13/newcastle-united/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/20/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "2",
+    "team_name": "Aston Villa",
+    "team_url": "https://sofifa.com/team/2/aston-villa/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/15/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "11",
+    "team_name": "Manchester United",
+    "team_url": "https://sofifa.com/team/11/manchester-united/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/14/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "5",
+    "team_name": "Chelsea",
+    "team_url": "https://sofifa.com/team/5/chelsea/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/18/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "14",
+    "team_name": "Nottingham Forest",
+    "team_url": "https://sofifa.com/team/14/nottingham-forest/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/63/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "1799",
+    "team_name": "Crystal Palace",
+    "team_url": "https://sofifa.com/team/1799/crystal-palace/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/51/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "1808",
+    "team_name": "Brighton & Hove Albion",
+    "team_url": "https://sofifa.com/team/1808/brighton-hove-albion/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/78/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "19",
+    "team_name": "West Ham United",
+    "team_url": "https://sofifa.com/team/19/west-ham-united/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/1/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "1943",
+    "team_name": "AFC Bournemouth",
+    "team_url": "https://sofifa.com/team/1943/afc-bournemouth/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/52/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "1925",
+    "team_name": "Brentford",
+    "team_url": "https://sofifa.com/team/1925/brentford/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/236/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "144",
+    "team_name": "Fulham FC",
+    "team_url": "https://sofifa.com/team/144/fulham-fc/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/11/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "110",
+    "team_name": "Wolverhampton Wanderers",
+    "team_url": "https://sofifa.com/team/110/wolverhampton-wanderers/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/29/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "7",
+    "team_name": "Everton",
+    "team_url": "https://sofifa.com/team/7/everton/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/13/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "95",
+    "team_name": "Leicester City",
+    "team_url": "https://sofifa.com/team/95/leicester-city/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/42/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "94",
+    "team_name": "Ipswich Town",
+    "team_url": "https://sofifa.com/team/94/ipswich-town/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/116/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "17",
+    "team_name": "Southampton",
+    "team_url": "https://sofifa.com/team/17/southampton/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/65/120.png",
+    "league_id": "13"
+  },
+  {
+    "team_id": "1796",
+    "team_name": "Burnley",
+    "team_url": "https://sofifa.com/team/1796/burnley/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/27/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "8",
+    "team_name": "Leeds United",
+    "team_url": "https://sofifa.com/team/8/leeds-united/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/71/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1794",
+    "team_name": "Sheffield United",
+    "team_url": "https://sofifa.com/team/1794/sheffield-united/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/21/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "106",
+    "team_name": "Sunderland",
+    "team_url": "https://sofifa.com/team/106/sunderland/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/3/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1923",
+    "team_name": "Luton Town",
+    "team_url": "https://sofifa.com/team/1923/luton-town/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/115/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "12",
+    "team_name": "Middlesbrough",
+    "team_url": "https://sofifa.com/team/12/middlesbrough/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/7/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1952",
+    "team_name": "Hull City",
+    "team_url": "https://sofifa.com/team/1952/hull-city/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/22/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "109",
+    "team_name": "West Bromwich Albion",
+    "team_url": "https://sofifa.com/team/109/west-bromwich-albion/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/10/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1800",
+    "team_name": "Coventry City",
+    "team_url": "https://sofifa.com/team/1800/coventry-city/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/117/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1919",
+    "team_name": "Bristol City",
+    "team_url": "https://sofifa.com/team/1919/bristol-city/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/122/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1807",
+    "team_name": "Sheffield Wednesday",
+    "team_url": "https://sofifa.com/team/1807/sheffield-wednesday/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/56/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1801",
+    "team_name": "Preston North End",
+    "team_url": "https://sofifa.com/team/1801/preston-north-end/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/99/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "3",
+    "team_name": "Blackburn Rovers",
+    "team_url": "https://sofifa.com/team/3/blackburn-rovers/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/2/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1795",
+    "team_name": "Watford",
+    "team_url": "https://sofifa.com/team/1795/watford/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/25/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "15",
+    "team_name": "Queens Park Rangers",
+    "team_url": "https://sofifa.com/team/15/queens-park-rangers/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/47/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1961",
+    "team_name": "Cardiff City",
+    "team_url": "https://sofifa.com/team/1961/cardiff-city/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/69/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "97",
+    "team_name": "Millwall FC",
+    "team_url": "https://sofifa.com/team/97/millwall-fc/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/64/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1792",
+    "team_name": "Norwich City",
+    "team_url": "https://sofifa.com/team/1792/norwich-city/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/33/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1790",
+    "team_name": "Portsmouth",
+    "team_url": "https://sofifa.com/team/1790/portsmouth/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/5/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1806",
+    "team_name": "Stoke City",
+    "team_url": "https://sofifa.com/team/1806/stoke-city/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/26/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1960",
+    "team_name": "Swansea City",
+    "team_url": "https://sofifa.com/team/1960/swansea-city/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/30/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "91",
+    "team_name": "Derby County",
+    "team_url": "https://sofifa.com/team/91/derby-county/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/24/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1929",
+    "team_name": "Plymouth Argyle",
+    "team_url": "https://sofifa.com/team/1929/plymouth-argyle/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/110/120.png",
+    "league_id": "14"
+  },
+  {
+    "team_id": "1951",
+    "team_name": "Oxford United",
+    "team_url": "https://sofifa.com/team/1951/oxford-united/",
+    "team_logo_url": "https://cdn.sofifa.net/meta/team/297/120.png",
+    "league_id": "14"
+  }
+]

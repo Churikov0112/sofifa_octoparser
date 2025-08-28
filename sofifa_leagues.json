@@ -1,0 +1,14 @@
+[
+  {
+    "league_id": "13",
+    "league_name": "Premier League",
+    "league_url": "https://sofifa.com/league/13",
+    "league_logo_url": "https://cdn.sofifa.net/meta/competition/8/60.png"
+  },
+  {
+    "league_id": "14",
+    "league_name": "Championship",
+    "league_url": "https://sofifa.com/league/14",
+    "league_logo_url": "https://cdn.sofifa.net/meta/competition/9/60.png"
+  }
+]
