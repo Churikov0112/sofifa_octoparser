@@ -47,46 +47,47 @@ def get_file_extension(url):
     return '.png'  # расширение по умолчанию
 
 
-def download_leagues_images(leagues_file, output_dir='leagues'):
+def download_competitions_images(competitions_file, output_dir='competitions'):
     """Скачивает логотипы лиг"""
     print("📥 Скачивание логотипов лиг...")
 
-    with open(leagues_file, 'r', encoding='utf-8') as f:
-        leagues = json.load(f)
+    with open(competitions_file, 'r', encoding='utf-8') as f:
+        competitions = json.load(f)
 
     success_count = 0
     error_count = 0
     skip_count = 0
 
-    for league in leagues:
-        logo_url = league.get('league_logo_url')
-        league_id = league.get('league_id')
+    for competition in competitions:
+        logo_url = competition.get('logo_url')
+        competition_id = competition.get('id')
+        competition_name = competition.get('name', 'Unknown')
 
-        if not logo_url or not league_id:
-            print(f"⚠️  Пропуск лиги {league.get('league_name')}: отсутствует URL или ID")
+        if not logo_url or not competition_id:
+            print(f"⚠️  Пропуск лиги {competition_name}: отсутствует URL или ID")
             error_count += 1
             continue
 
-        # Проверяем заглушку (хотя для лиг вряд ли будет, но на всякий случай)
+        # Проверяем заглушку
         if logo_url == "https://cdn.sofifa.net/player_0.svg":
-            print(f"⏭️  Пропуск лиги {league['league_name']}: изображение-заглушка")
+            print(f"⏭️  Пропуск лиги {competition_name}: изображение-заглушка")
             skip_count += 1
             continue
 
         extension = get_file_extension(logo_url)
-        filename = f"{league_id}{extension}"
+        filename = f"{competition_id}{extension}"
         filepath = os.path.join(output_dir, filename)
 
         success, result = download_image(logo_url, filepath)
         if success:
-            print(f"✅ Лига {league['league_name']}: {filename}")
+            print(f"✅ Лига {competition_name}: {filename}")
             success_count += 1
         else:
             if "Пропуск: изображение-заглушка" in result:
-                print(f"⏭️  Лига {league['league_name']}: изображение-заглушка")
+                print(f"⏭️  Лига {competition_name}: изображение-заглушка")
                 skip_count += 1
             else:
-                print(f"❌ Ошибка лиги {league['league_name']}: {result}")
+                print(f"❌ Ошибка лиги {competition_name}: {result}")
                 error_count += 1
 
         time.sleep(0.1)  # небольшая задержка между запросами
@@ -107,17 +108,18 @@ def download_teams_images(teams_file, output_dir='teams'):
     skip_count = 0
 
     for team in teams:
-        logo_url = team.get('team_logo_url')
-        team_id = team.get('team_id')
+        logo_url = team.get('logo_url')
+        team_id = team.get('id')
+        team_name = team.get('name', 'Unknown')
 
         if not logo_url or not team_id:
-            print(f"⚠️  Пропуск команды {team.get('team_name')}: отсутствует URL или ID")
+            print(f"⚠️  Пропуск команды {team_name}: отсутствует URL или ID")
             error_count += 1
             continue
 
         # Проверяем заглушку
         if logo_url == "https://cdn.sofifa.net/player_0.svg":
-            print(f"⏭️  Пропуск команды {team['team_name']}: изображение-заглушка")
+            print(f"⏭️  Пропуск команды {team_name}: изображение-заглушка")
             skip_count += 1
             continue
 
@@ -127,14 +129,14 @@ def download_teams_images(teams_file, output_dir='teams'):
 
         success, result = download_image(logo_url, filepath)
         if success:
-            print(f"✅ Команда {team['team_name']}: {filename}")
+            print(f"✅ Команда {team_name}: {filename}")
             success_count += 1
         else:
             if "Пропуск: изображение-заглушка" in result:
-                print(f"⏭️  Команда {team['team_name']}: изображение-заглушка")
+                print(f"⏭️  Команда {team_name}: изображение-заглушка")
                 skip_count += 1
             else:
-                print(f"❌ Ошибка команды {team['team_name']}: {result}")
+                print(f"❌ Ошибка команды {team_name}: {result}")
                 error_count += 1
 
         time.sleep(0.1)  # небольшая задержка между запросами
@@ -281,31 +283,32 @@ def count_placeholder_images(players_file):
             players_with_placeholders.append({
                 'name': player.get('name'),
                 'id': player.get('id'),
-                'team': player.get('team_id')
+                'team_id': player.get('team_id')
             })
 
     print(f"📊 Найдено игроков с заглушками: {placeholder_count} из {len(players)}")
 
     # Сохраняем список игроков с заглушками
     if players_with_placeholders:
-        with open("players_with_placeholder_images.json", 'w', encoding='utf-8') as f:
+        with open("sofifa_players_with_placeholder_images.json", 'w', encoding='utf-8') as f:
             json.dump(players_with_placeholders, f, indent=2, ensure_ascii=False)
-        print(f"📋 Список сохранен в players_with_placeholder_images.json")
+        print(f"📋 Список сохранен в sofifa_players_with_placeholder_images.json")
 
     return placeholder_count
 
 
 def main():
     """Основная функция"""
-    # Файлы с данными
-    leagues_file = "sofifa_leagues.json"
+    # Файлы с данными (новая структура)
+    competitions_file = "sofifa_competitions.json"
     teams_file = "sofifa_teams.json"
     players_file = "sofifa_players.json"
 
     # Проверяем существование файлов
-    for file in [leagues_file, teams_file, players_file]:
+    for file in [competitions_file, teams_file, players_file]:
         if not os.path.exists(file):
             print(f"❌ Файл {file} не найден!")
+            print("Сначала запустите скрипт разделения данных")
             return
 
     print("🚀 Начинаем скачивание изображений...")
@@ -315,7 +318,7 @@ def main():
     placeholder_count = count_placeholder_images(players_file)
 
     # Скачиваем логотипы лиг
-    leagues_success, leagues_skip, leagues_errors = download_leagues_images(leagues_file)
+    competitions_success, competitions_skip, competitions_errors = download_competitions_images(competitions_file)
 
     # Скачиваем логотипы команд
     teams_success, teams_skip, teams_errors = download_teams_images(teams_file)
@@ -326,9 +329,9 @@ def main():
 
     # Выводим общую статистику
     total_time = time.time() - start_time
-    total_success = leagues_success + teams_success + players_success
-    total_skip = leagues_skip + teams_skip + players_skip
-    total_errors = leagues_errors + teams_errors + players_errors
+    total_success = competitions_success + teams_success + players_success
+    total_skip = competitions_skip + teams_skip + players_skip
+    total_errors = competitions_errors + teams_errors + players_errors
 
     print(f"\n🎉 Скачивание завершено!")
     print(f"⏱️  Общее время: {total_time:.2f} секунд")
@@ -336,41 +339,9 @@ def main():
     print(f"   ✅ Успешно скачано: {total_success}")
     print(f"   ⏭️  Пропущено (заглушки): {total_skip}")
     print(f"   ❌ Ошибок: {total_errors}")
-    print(f"   📁 Лиги: {leagues_success} успешно, {leagues_skip} пропущено")
+    print(f"   📁 Лиги: {competitions_success} успешно, {competitions_skip} пропущено")
     print(f"   📁 Команды: {teams_success} успешно, {teams_skip} пропущено")
     print(f"   📁 Игроки: {players_success} успешно, {players_skip} пропущено")
-
-    # Создаем файл с отчетом
-    report = {
-        "download_summary": {
-            "total_time_seconds": round(total_time, 2),
-            "total_success": total_success,
-            "total_skipped_placeholders": total_skip,
-            "total_errors": total_errors,
-            "leagues_success": leagues_success,
-            "leagues_skipped": leagues_skip,
-            "leagues_errors": leagues_errors,
-            "teams_success": teams_success,
-            "teams_skipped": teams_skip,
-            "teams_errors": teams_errors,
-            "players_success": players_success,
-            "players_skipped": players_skip,
-            "players_errors": players_errors,
-            "players_placeholder_count": placeholder_count
-        },
-        "folders_created": [
-            "leagues/",
-            "teams/",
-            "players/"
-        ],
-        "placeholder_url": "https://cdn.sofifa.net/player_0.svg",
-        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-    }
-
-    with open("download_report.json", 'w', encoding='utf-8') as f:
-        json.dump(report, f, indent=2, ensure_ascii=False)
-
-    print(f"📋 Отчет сохранен в download_report.json")
 
 
 if __name__ == "__main__":
