@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5351de7-b26e-4280-a495-c0e796d1ea74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sofifa_4_tm_market_values.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sofifa_5_tm_players_profiles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tm_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tm_3_market_values.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tm_4_players_profiles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tm_6_load_images.py" afterDir="false" />
+    <list default="true" id="a5351de7-b26e-4280-a495-c0e796d1ea74" name="Changes" comment="better scripts">
+      <change afterPath="$PROJECT_DIR$/sofifa_5_tm_market_values_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sofifa_5_tm_market_values_v3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sofifa_6_tm_players_merge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sofifa_7_tm_players_profiles_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tm_3_market_values_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_extract_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_1_extract_ids.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_split_leagues_teams_players.py" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_2_split_leagues_teams_players.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_load_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_3_load_images.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_load_market_values.py" beforeDir="false" afterPath="$PROJECT_DIR$/tm_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/download_report.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/leagues/13.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/leagues/14.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/market_value_report.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octoparse_task/sofifa_leagues_clubs_teams_players.otd" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_octoparse_task/sofifa_leagues_clubs_teams_players.otd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/players/138412.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/players/152908.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/players/157804.png" beforeDir="false" />
@@ -1230,6 +1226,13 @@
       <change beforePath="$PROJECT_DIR$/players/75272.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/players/75577.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/players_with_placeholder_images.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofifa_1_extract_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_1_extract_ids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofifa_2_split_leagues_teams_players.py" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_2_split_leagues_teams_players.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofifa_3_load_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_3_load_images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofifa_4_tm_market_values.py" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_4_tm_market_values_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofifa_5_tm_players_profiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_7_tm_players_profiles_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofifa_english_clubs_players_25.json" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_raw_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofifa_english_clubs_players_25_with_ids.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_indexes.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_leagues.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_meta.json" beforeDir="false" />
@@ -1280,6 +1283,10 @@
       <change beforePath="$PROJECT_DIR$/teams/94.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/teams/95.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/teams/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tm_1_competitions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tm_2_teams_and_players.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm_3_market_values.py" beforeDir="false" afterPath="$PROJECT_DIR$/tm_3_market_values_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm_4_players_profiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/tm_4_players_profiles_v1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1320,14 +1327,27 @@
   "keyToString": {
     "Python.5_load_players.executor": "Run",
     "Python.async_script.executor": "Run",
+    "Python.sofifa_1_extract_ids.executor": "Run",
     "Python.sofifa_2_split_leagues_teams_players.executor": "Run",
     "Python.sofifa_3_load_images.executor": "Run",
     "Python.sofifa_4_load_market_value.executor": "Run",
+    "Python.sofifa_4_tm_market_values.executor": "Run",
+    "Python.sofifa_5_tm_market_values_v3.executor": "Run",
     "Python.sofifa_5_tm_players_profiles.executor": "Run",
+    "Python.sofifa_5_tm_players_profiles_v1.executor": "Run",
+    "Python.sofifa_5_tm_players_profiles_v2.executor": "Run",
+    "Python.sofifa_6_tm_players_merge.executor": "Run",
+    "Python.sofifa_7_tm_players_profiles_v1.executor": "Run",
+    "Python.sofifa_7_tm_players_profiles_v2.executor": "Run",
     "Python.tm_1.executor": "Run",
+    "Python.tm_1_competitions.executor": "Run",
     "Python.tm_2.executor": "Run",
+    "Python.tm_2_teams_and_players.executor": "Run",
     "Python.tm_3.executor": "Run",
+    "Python.tm_3_market_values_v2.executor": "Run",
     "Python.tm_4_players_profiles.executor": "Run",
+    "Python.tm_4_players_profiles_v1.executor": "Run",
+    "Python.tm_4_players_profiles_v2.executor": "Run",
     "Python.tm_5_players_profiles.executor": "Run",
     "Python.tm_6_load_images.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -1362,6 +1382,15 @@
       <option name="presentableId" value="Default" />
       <updated>1756381024786</updated>
     </task>
+    <task id="LOCAL-00001" summary="better scripts">
+      <option name="closed" value="true" />
+      <created>1756913975988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756913975988</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1374,5 +1403,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="better scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="better scripts" />
   </component>
 </project>

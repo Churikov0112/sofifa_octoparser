@@ -47,6 +47,7 @@ def split_into_separate_files(input_file, output_prefix):
             teams[team_id] = {
                 'id': team_id,
                 'name': player.get('team_name'),
+                'transfermarkt_id': player.get('team_transfermarkt_id'),
                 'logo_url': player.get('team_logo_url'),
                 'competition_id': league_id,
                 'players_ids': []  # Будет заполнен позже
@@ -213,7 +214,7 @@ def read_combined_data(competitions_file, teams_file, players_file, players_rati
 
 # Запуск обработки
 if __name__ == "__main__":
-    input_filename = "sofifa_english_clubs_players_25_with_ids.json"
+    input_filename = "sofifa_raw_data_with_ids.json"
     output_prefix = "sofifa"
 
     # Разделяем данные на отдельные файлы

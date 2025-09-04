@@ -47,7 +47,7 @@ def get_file_extension(url):
     return '.png'  # расширение по умолчанию
 
 
-def download_competitions_images(competitions_file, output_dir='competitions'):
+def download_competitions_images(competitions_file, output_dir='sofifa_competitions'):
     """Скачивает логотипы лиг"""
     print("📥 Скачивание логотипов лиг...")
 
@@ -96,7 +96,7 @@ def download_competitions_images(competitions_file, output_dir='competitions'):
     return success_count, skip_count, error_count
 
 
-def download_teams_images(teams_file, output_dir='teams'):
+def download_teams_images(teams_file, output_dir='sofifa_teams'):
     """Скачивает логотипы команд"""
     print("\n📥 Скачивание логотипов команд...")
 
@@ -145,7 +145,7 @@ def download_teams_images(teams_file, output_dir='teams'):
     return success_count, skip_count, error_count
 
 
-def download_players_images_parallel(players_file, output_dir='players', max_workers=10):
+def download_players_images_parallel(players_file, output_dir='sofifa_players', max_workers=10):
     """Скачивает изображения игроков с использованием многопоточности"""
     print("\n📥 Скачивание изображений игроков (многопоточное)...")
 
@@ -215,7 +215,7 @@ def download_players_images_parallel(players_file, output_dir='players', max_wor
     return success_count, skip_count, error_count
 
 
-def download_players_images_sequential(players_file, output_dir='players'):
+def download_players_images_sequential(players_file, output_dir='sofifa_players'):
     """Скачивает изображения игроков последовательно (альтернатива)"""
     print("\n📥 Скачивание изображений игроков (последовательно)...")
 

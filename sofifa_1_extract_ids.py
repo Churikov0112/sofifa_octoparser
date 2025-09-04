@@ -18,6 +18,7 @@ def process_players(input_file, output_file):
     sofifa_id_pattern = r'/player/(\d+)/'
     league_id_pattern = r'/league/(\d+)'
     team_id_pattern = r'/team/(\d+)/'
+    team_transfermarkt_pattern = r'/verein/(\d+)'
 
     # Обработка каждого игрока
     for player in players:
@@ -37,6 +38,10 @@ def process_players(input_file, output_file):
         if 'team_url' in player and player['team_url']:
             player['team_id'] = extract_id_from_url(player['team_url'], team_id_pattern)
 
+        # 5. Добавляем team_transfermarkt_id
+        if 'team_transfermarkt_url' in player and player['team_transfermarkt_url']:
+            player['team_transfermarkt_id'] = extract_id_from_url(player['team_transfermarkt_url'], team_transfermarkt_pattern)
+
     # Сохранение результата в новый файл
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(players, f, indent=2, ensure_ascii=False)
@@ -47,7 +52,7 @@ def process_players(input_file, output_file):
 
 # Запуск обработки
 if __name__ == "__main__":
-    input_filename = "sofifa_english_clubs_players_25.json"
-    output_filename = "sofifa_english_clubs_players_25_with_ids.json"
+    input_filename = "sofifa_raw_data.json"
+    output_filename = "sofifa_raw_data_with_ids.json"
 
     process_players(input_filename, output_filename)
