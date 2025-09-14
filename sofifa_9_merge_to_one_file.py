@@ -115,14 +115,14 @@ def merge_football_data():
                 'nationality': tm_player.get('nationality'),
                 'height': tm_player.get('height'),
                 'foot': tm_player.get('foot'),
-                'market_value': tm_player.get('marketValue')
+                'marketValue': tm_player.get('marketValue')
             }
 
             # Добавляем историю рыночной стоимости если есть
             market_value_data = tm_market_values_dict.get(tm_player.get('id'))
             if market_value_data:
-                transfermarkt_data['market_value'] = market_value_data.get('marketValue')
-                transfermarkt_data['market_value_history'] = market_value_data.get('marketValueHistory', [])
+                transfermarkt_data['marketValue'] = market_value_data.get('marketValue')
+                transfermarkt_data['marketValueHistory'] = market_value_data.get('marketValueHistory', [])
                 transfermarkt_data['updatedAt'] = market_value_data.get('updatedAt')
 
         if transfermarkt_data:
