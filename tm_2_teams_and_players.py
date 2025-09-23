@@ -320,7 +320,7 @@ def main():
     input_filename = "tm_competitions.json"  # Файл с данными о лигах
     teams_output_filename = "tm_teams.json"  # Выходной файл для команд
     players_output_filename = "tm_players.json"  # Выходной файл для игроков
-    season_id = "2024"  # Сезон
+    season_id = "2025"  # Сезон
 
     # Проверяем существование входного файла
     if not os.path.exists(input_filename):

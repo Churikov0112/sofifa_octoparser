@@ -47,7 +47,7 @@ def split_into_separate_files(input_file, output_prefix):
             teams[team_id] = {
                 'id': team_id,
                 'name': player.get('team_name'),
-                'transfermarkt_id': player.get('team_transfermarkt_id'),
+                # 'transfermarkt_id': player.get('team_transfermarkt_id'),
                 'logo_url': player.get('team_logo_url'),
                 'competition_id': league_id,
                 'players_ids': []  # Будет заполнен позже

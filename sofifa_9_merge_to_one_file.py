@@ -95,14 +95,14 @@ def merge_football_data():
         # Ищем игрока в Transfermarkt по transfermarkt_id из SOFIFA
         if tm_player_id and tm_player_id in tm_players_dict:
             tm_player = tm_players_dict[tm_player_id]
-        # Если не нашли по ID, пробуем найти по имени (резервный вариант)
-        else:
-            # Простой поиск по имени (можно улучшить при необходимости)
-            sofifa_name = sofifa_player.get('name', '').lower()
-            for tm_player_candidate in tm_players:
-                if tm_player_candidate.get('name', '').lower() == sofifa_name:
-                    tm_player = tm_player_candidate
-                    break
+        # # Если не нашли по ID, пробуем найти по имени (резервный вариант)
+        # else:
+        #     # Простой поиск по имени (можно улучшить при необходимости)
+        #     sofifa_name = sofifa_player.get('name', '').lower()
+        #     for tm_player_candidate in tm_players:
+        #         if tm_player_candidate.get('name', '').lower() == sofifa_name:
+        #             tm_player = tm_player_candidate
+        #             break
 
         if tm_player:
             players_with_transfermarkt += 1

@@ -212,7 +212,7 @@ def main():
     """Основная функция"""
     # Конфигурация
     competition_ids = ["GB1", "GB2"]  # ID лиг для обработки
-    season_id = "2024"  # Сезон
+    season_id = "2025"  # Сезон
     output_filename = "tm_competitions.json"  # Выходной файл
 
     print(f"🏆 Начинаем обработку лиг: {competition_ids}")
