@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5351de7-b26e-4280-a495-c0e796d1ea74" name="Changes" comment="better scripts">
-      <change afterPath="$PROJECT_DIR$/tm_4_players_faces.py" afterDir="false" />
+    <list default="true" id="a5351de7-b26e-4280-a495-c0e796d1ea74" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/sofifa_octoparser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sofifa_octoparser.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/download_report.json" beforeDir="false" />
@@ -1222,12 +1221,14 @@
       <change beforePath="$PROJECT_DIR$/players/75272.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/players/75577.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/players_with_placeholder_images.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofifa_9_merge_to_one_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/sofifa_9_merge_to_one_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_english_clubs_players_25_with_ids.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_indexes.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_leagues.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_meta.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_players.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_players_with_market_value.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sofifa_raw_data.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sofifa_teams.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/teams/1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/teams/10.png" beforeDir="false" />
@@ -1273,8 +1274,7 @@
       <change beforePath="$PROJECT_DIR$/teams/94.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/teams/95.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/teams/97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm_4_players_profiles_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tm_5_players_profiles_v1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm_6_load_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/tm_6_load_images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm_1_competitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tm_1_competitions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1300,7 +1300,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Churikov0112/sofifa_octoparser.git&quot;,
-    &quot;accountId&quot;: &quot;3d115172-5205-4e5e-bc22-4d6003335e1b&quot;
+    &quot;accountId&quot;: &quot;83a28c60-ad48-409f-a1bb-ffbf611df08a&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -1311,47 +1311,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.5_load_players.executor": "Run",
-    "Python.async_script.executor": "Run",
-    "Python.sofifa_1_extract_ids.executor": "Run",
-    "Python.sofifa_2_split_leagues_teams_players.executor": "Run",
-    "Python.sofifa_3_load_images.executor": "Run",
-    "Python.sofifa_4_load_market_value.executor": "Run",
-    "Python.sofifa_4_tm_market_values.executor": "Run",
-    "Python.sofifa_5_tm_market_values_v3.executor": "Run",
-    "Python.sofifa_5_tm_players_profiles.executor": "Run",
-    "Python.sofifa_5_tm_players_profiles_v1.executor": "Run",
-    "Python.sofifa_5_tm_players_profiles_v2.executor": "Run",
-    "Python.sofifa_6_tm_players_merge.executor": "Run",
-    "Python.sofifa_7_tm_players_profiles_v1.executor": "Run",
-    "Python.sofifa_7_tm_players_profiles_v2.executor": "Run",
-    "Python.tm_1.executor": "Run",
-    "Python.tm_1_competitions.executor": "Run",
-    "Python.tm_2.executor": "Run",
-    "Python.tm_2_teams_and_players.executor": "Run",
-    "Python.tm_3.executor": "Run",
-    "Python.tm_3_market_values_v2.executor": "Run",
-    "Python.tm_4_players_faces.executor": "Run",
-    "Python.tm_4_players_profiles.executor": "Run",
-    "Python.tm_4_players_profiles_v1.executor": "Run",
-    "Python.tm_4_players_profiles_v2.executor": "Run",
-    "Python.tm_5_players_profiles.executor": "Run",
-    "Python.tm_6_load_images.executor": "Run",
-    "Python.tm_6_scrape_players_pages.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/egorchurikov/Desktop/projects/sofifa_octoparser",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.5_load_players.executor&quot;: &quot;Run&quot;,
+    &quot;Python.async_script.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_10_enhance_faces.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_1_extract_ids.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_2_split_leagues_teams_players.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_3_load_images.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_4_load_market_value.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_4_tm_market_values.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_5_tm_market_values_v3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_5_tm_players_profiles.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_5_tm_players_profiles_v1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_5_tm_players_profiles_v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_6_tm_players_merge.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_7_tm_players_profiles_v1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_7_tm_players_profiles_v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_8_players_unique_positions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sofifa_9_merge_to_one_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_1_competitions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_2_teams_and_players.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_3_market_values_v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_4_players_profiles.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_4_players_profiles_v1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_4_players_profiles_v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_5_players_profiles.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tm_6_load_images.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/egorchurikov/Desktop/projects/sofifa_octoparser&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.venv" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/octoparse_tast" />
@@ -1360,7 +1361,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
+        <option value="bundled-python-sdk-1bde30d8e611-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.130" />
       </set>
     </attachedChunks>
   </component>
@@ -1381,7 +1382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756913975988</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix">
+      <option name="closed" value="true" />
+      <created>1758649567509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758649567509</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1397,6 +1406,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="better scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="better scripts" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
